@@ -13,6 +13,7 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/pkg/browser"
 	"github.com/valyala/fasthttp"
 )
 
@@ -89,6 +90,8 @@ func main() {
 		},
 	}
 
+	log.Println("Opening on port 8080")
+	browser.OpenURL("http://localhost:8080/index.html")
 	err = fasthttp.ListenAndServe(":8080", page.fetchPage)
 	if err != nil {
 		log.Fatal(err)
