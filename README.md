@@ -10,7 +10,7 @@ Small script to view static sites from github locally.
 #### Run built binaries
 - Clone this repo
 - `cd` into the `bin` folder
-- run `./vap` if on a mac or linux else run `./vap.exe` if on windows
+- run `./vap <repository_url>` if on a mac or linux else run `./vap.exe <repository_url>` if on windows
 - Open `localhost:8080` on your browser
 
 ---
